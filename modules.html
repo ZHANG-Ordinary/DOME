@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./layui/modules.css">
+</head>
+
+<body>
+    <div class="HTML">
+        <!-- 头部导航栏 -->
+        <div class="Header">
+            <ul class="layui-nav ul1" lay-filter="">
+                <li class="layui-nav-item">
+                    <a href="">主界面</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">购物车</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">我的订单</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">已发货订单</a></dd>
+                        <dd><a href="">已收货订单</a></dd>
+                        <dd><a href="">退款中订单</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">我的收藏</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="">评论中心</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">个人评论</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item ul2">
+                    <a>退出登录</a>
+                </li>
+            </ul>
+        </div>
+        <div class="HTMLS">
+            <!-- 主体 -->
+            <div class="body">
+                <h1>132</h1>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="./layui/layui.js"></script>
+    <script>
+        layui.use('element', function () {
+            var element = layui.element;
+            var carousel = layui.carousel;
+            carousel.render({
+                elem: '#test1'
+                , width: '12%'
+                , height: '84vh' //设置容器宽度
+                , arrow: 'always' //始终显示箭头
+                //,anim: 'updown' //切换动画方式
+                , interval: 2000
+            });
+        });
+    </script>
+</body>
+
+</html>
